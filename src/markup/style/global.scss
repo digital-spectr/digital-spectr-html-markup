@@ -1,0 +1,28 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(../img/bg.png);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+.rsp_wrapper {
+  width: 100%;
+}
+
+.rsp_inner {
+  margin: auto;
+  position: relative;
+  width: 1200px;
+}
+
+.clear {
+  clear: both;
+}

@@ -1,14 +1,14 @@
 @import "constants";
 @import "mixins";
-
-
-@import "global";
 @import "sprite";
 
 // @import "libs/_vendor"; // - подключение всех стилей bower компонентов "как есть". Часто - не требуется
+@import "libs/normalize-css";
 @import "libs/jquery.fancybox";
 @import "libs/jquery.formstyler";
 @import "libs/swiper";
+
+@import "global";
 
 //elems
 @import "elements/btn";

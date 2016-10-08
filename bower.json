@@ -16,6 +16,7 @@
     "swiper": "*",
     "matchHeight": "*",
     "fancybox": "master",
-    "jquery.form-styler": "*"
+    "jquery.form-styler": "*",
+    "normalize-css": "*"
   }
 }

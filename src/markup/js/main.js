@@ -2,7 +2,8 @@
 /* //= libs/_vendor.js    - если не хочетс подключать 2 файла, можно всё объединить */
 
 $(function () {
-    console.log(2222);
+    $(".fancybox").fancybox();
+    $("select").styler();
 
 });
 

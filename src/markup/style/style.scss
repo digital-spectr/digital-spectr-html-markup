@@ -6,6 +6,9 @@
 @import "sprite";
 
 // @import "libs/_vendor"; // - подключение всех стилей bower компонентов "как есть". Часто - не требуется
+@import "libs/jquery.fancybox";
+@import "libs/jquery.formstyler";
+@import "libs/swiper";
 
 //elems
 @import "elements/btn";

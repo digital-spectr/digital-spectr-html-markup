@@ -35,7 +35,7 @@ var path = {
     },
     src: { //Пути откуда брать исходники
         html: 'src/markup/*.html',
-        js: 'src/markup/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
+        js: 'src/markup/js/**/*.js',
         jsLibsDir: 'src/markup/js/libs/',
         styleDir: 'src/markup/style/',
         styleLibsDir: 'src/markup/style/libs/',
@@ -83,6 +83,7 @@ gulp.task('sprite', function() {
 gulp.task('js', function () {
     gulp.src(path.src.js) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
+        .pipe(concat('_main.js'))
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
         .pipe(sourcemaps.write()) //Пропишем карты
         .pipe(uglify()) //Сожмем наш js
@@ -121,7 +122,7 @@ gulp.task('bower', function () {
         .pipe(jsFilter)
         .pipe(concat('_vendor.js'))
         .pipe(uglify())
-        .pipe(gulp.dest(path.src.jsLibsDir))
+        //.pipe(gulp.dest(path.src.jsLibsDir))
         .pipe(gulp.dest(path.build.js))
     ;
 
